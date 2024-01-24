@@ -34,15 +34,11 @@ To reproduce the results, please run the following:
                                      ./run_prpm_offline.sh
 
 
-*   Run the following for RealCaise: 
+*  To execute realCause, please run the following two commands and change the data_name to either bpic12 or bpic17. For more details, please refer to the following [link]([https://kodu.ut.ee/~dumas/](https://github.com/bradyneal/realcause)):
 
-python realCause/train_generator.py --data "bpic12"  --dist "SigmoidFlow" --n_hidden_layers 1 --dim_h 14 --w_transform "Standardize" --y_transform "Normalize" --saveroot "results_realcause_bpic2012"
+                                      python realCause/train_generator.py --data <data_name>  --dist "SigmoidFlow" --n_hidden_layers 1 --dim_h 14 --w_transform "Standardize" --y_transform "Normalize" --saveroot "results_realcause_bpic2012"
+                                      python realCause/make_datasets.py --data <data_name>
 
- python realCause/train_generator.py --data "bpic17"  --dist "SigmoidFlow" --n_hidden_layers 1 --dim_h 14 --w_tra
-nsform "Standardize" --y_transform "Normalize" --saveroot "results_realcause_bpic2017"
-
-python realCause/make_datasets.py --data bpic17
-python realCause/make_datasets.py --data bpic12
 
     
 *   Execute the following shell script to initiate experiments with varying resource availability, thereby obtaining resource utilization levels:
