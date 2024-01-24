@@ -40,34 +40,5 @@ To reproduce the results, please run the following:
                                       python realCause/make_datasets.py --data <data_name>
 
 
-    
-*   Execute the following shell script to initiate experiments with varying resource availability, thereby obtaining resource utilization levels:
-
-                                     ./run_extract_utilization_levels.sh
-
-    
-*   Compile results to extract the resource utilization levels by executing the following notebook:
-
-                                     extract_resource_utilization_levels.ipynb
-
-
-*   Run the following shell script to conduct experiments involving different variants of the proposed approach as well as baseline methods:
-
-                                    ./run_variants_with_BLs.sh <log_name> <resFolder> <mode> <resource_levels>
-                                    log_name: ["bpic2012", "bpic2017", "trafficFines"]
-                                    mode: ["BL1", "BL2", "ours" ]
-                                    resource_levels: as extracted from the previous step.
-    
-                                    Ex: taskset -c 0-7 ./run_variants_with_BLs.sh bpic2012  resultsRL ours  "1 4 6 12"
- 
-                                     
-
-* Finally, execute the following notebook to collect results regarding RQ1 and RQ2.: 
-
-                                     compile_results.ipynb
-                                     
-
-
-
 
 
