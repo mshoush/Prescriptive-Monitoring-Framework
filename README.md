@@ -32,6 +32,18 @@ To reproduce the results, please run the following:
 *   Run the following shell script to start experiments w.r.t the training and calibration phases: 
 
                                      ./run_prpm_offline.sh
+
+
+*   Run the following for RealCaise: 
+
+python realCause/train_generator.py --data "bpic12"  --dist "SigmoidFlow" --n_hidden_layers 1 --dim_h 14 --w_transform "Standardize" --y_transform "Normalize" --saveroot "results_realcause_bpic2012"
+
+ python realCause/train_generator.py --data "bpic17"  --dist "SigmoidFlow" --n_hidden_layers 1 --dim_h 14 --w_tra
+nsform "Standardize" --y_transform "Normalize" --saveroot "results_realcause_bpic2017"
+
+python realCause/make_datasets.py --data bpic17
+python realCause/make_datasets.py --data bpic12
+
     
 *   Execute the following shell script to initiate experiments with varying resource availability, thereby obtaining resource utilization levels:
 
