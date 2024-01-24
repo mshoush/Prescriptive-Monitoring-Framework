@@ -29,9 +29,9 @@ To reproduce the results, please run the following:
 
 
   
-*   Run the following shell script to start experiments w.r.t the offline phase: 
+*   Run the following shell script to start experiments w.r.t the training and calibration phases: 
 
-                                     ./run_offline_phase.sh
+                                     ./run_prpm_offline.sh
     
 *   Execute the following shell script to initiate experiments with varying resource availability, thereby obtaining resource utilization levels:
 
