@@ -34,7 +34,7 @@ To reproduce the results, please run the following:
                                      ./run_prpm_offline.sh
 
 
-*  To execute realCause, please run the following two commands and change the data_name to either bpic12 or bpic17. For more details, please refer to the following [link]([https://kodu.ut.ee/~dumas/](https://github.com/bradyneal/realcause):
+*  To execute realCause, please run the following two commands and change the data_name to either bpic12 or bpic17. For more details, please refer to the following [link](https://github.com/bradyneal/realcause):
 
                                       python realCause/train_generator.py --data <data_name>  --dist "SigmoidFlow" --n_hidden_layers 128 --dim_h 14 --w_transform "Standardize" --y_transform "Normalize" --saveroot "results_realcause_bpic2012"
                                       python realCause/make_datasets.py --data <data_name>
