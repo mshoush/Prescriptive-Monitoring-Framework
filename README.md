@@ -25,9 +25,8 @@ To reproduce the results, please run the following:
 
 * Run the following notebooks to prepare the datasets:
   
-                                  prepare_trafficFines.ipynb
-                                  prepare_data_bpic2012.ipynb
-                                  prepare_data_bpic2017.ipynb
+                                  ./prepare_data/prepare_data.ipynb
+
 
   
 *   Run the following shell script to start experiments w.r.t the offline phase: 
