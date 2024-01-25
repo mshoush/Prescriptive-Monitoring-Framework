@@ -40,5 +40,12 @@ To reproduce the results, please run the following:
                                       python realCause/make_datasets.py --data <data_name>
 
 
+* Then, execute the following notebook to collect results regarding the testing phase, i.e., run-time.: 
+
+                                     compile_results.ipynb
+
+  
+
+
 
 
