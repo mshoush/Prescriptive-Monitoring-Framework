@@ -44,6 +44,10 @@ To reproduce the results, please run the following:
 
                                      compile_results.ipynb
 
+
+* Now, run the following shell script to conduct experiments involving different variants of the proposed framework as well as baseline methods:
+
+                                    ./run_test_phase.sh
   
 
 
