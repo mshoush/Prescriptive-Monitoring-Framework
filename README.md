@@ -19,7 +19,7 @@ To reproduce the results, please run the following:
 
 * First, install the required packages using the following command into your environment:
 
-                                  pip install -r requirementsRL.txt
+                                  pip install -r requirements.txt
 
 * Next, download the data folder from the abovementioned link
 
