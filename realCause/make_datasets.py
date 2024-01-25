@@ -12,20 +12,18 @@ from train_generator import get_args
 from sys import argv
 
 
-FOLDER = Path(REALCAUSE_DATASETS_FOLDER)
-FOLDER.mkdir(parents=True, exist_ok=True)
-
-# psid_gen_model, args = load_from_folder(dataset='lalonde_psid1')
-# cps_gen_model, args = load_from_folder(dataset='lalonde_cps1')
-# twins_gen_model, args = load_from_folder(dataset='twins')
-
-# psid_w, psid_t, psid_y = load_lalonde(obs_version='psid', data_format='pandas')
-# cps_w, cps_t, cps_y = load_lalonde(obs_version='cps', data_format='pandas')
-# d_twins = load_twins(data_format='pandas')
-# twins_w, twins_t, twins_y = d_twins['w'], d_twins['t'], d_twins['y']
 
 DATA_NAME = get_args().parse_args().data.lower()
 print(f"loading: {DATA_NAME}")
+
+if DATA_NAME=="bpic17":
+    DATA_NAME="bpic2017"
+elif DATA_NAME=="bpic12":
+    DATA_NAME="bpic2012"
+
+FOLDER = Path(REALCAUSE_DATASETS_FOLDER+"_"+DATA_NAME)
+FOLDER.mkdir(parents=True, exist_ok=True)
+
 
 
 bpic_gen_model, args = load_from_folder(dataset=DATA_NAME)
