@@ -48,7 +48,10 @@ To reproduce the results, please run the following:
 * Now, run the following shell script to conduct experiments involving different variants of the proposed framework as well as baseline methods:
 
                                     ./run_test_phase.sh
-  
+
+* Finally, execute the following notebook to collect results: 
+
+                                     plot_results_all.ipynb
 
 
 
