@@ -370,13 +370,7 @@ def run_rule(data_dict, resources, rule_name, treatment_duration, iw_thre, te_th
                     outcomeyy = candidate_cases[best_case_key][-1]
 
                     netGain = outcomeyy * (outcom_gain - treatmnet_cost)
-
-                    treated_cases[best_case_key] = candidate_cases[best_case_key]
-
-                    treated_cases[best_case_key].append(netGain1)
-                    treated_cases[best_case_key].append(netGain2)
-                    treated_cases[best_case_key].append(netGain3)
-                    treated_cases[best_case_key].append(netGainn)
+                    treated_cases[best_case_key] = candidate_cases[best_case_key]                    
                     treated_cases[best_case_key].append(netGain)
 
                     del candidate_cases[best_case_key]
